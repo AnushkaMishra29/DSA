@@ -1,0 +1,13 @@
+string reverseWord(string str){
+    int low=0;
+    int high=str.length()-1;
+    while(low<=high){
+        char t=str[low];
+        str[low]=str[high];
+        str[high]=t;
+        low++;high--;
+    }
+    for(int i=0;i<str.length();i++){
+        cout<<str[i];
+    }
+}
